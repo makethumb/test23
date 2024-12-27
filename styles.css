@@ -1,0 +1,131 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .logo{
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  li {
+    margin-left: 20px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  section {
+    padding: 40px 0;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  h1, h2, h3 {
+    color: #333;
+  }
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .timeline-item {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .timeline-point {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 8px;
+  }
+  .timeline-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  .project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  .skill-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  .education-item {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  ul li i {
+    margin-right: 5px;
+  }
+
+  @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    nav li {
+        margin: 10px 0;
+    }
+    .projects-grid,
+    .skills-grid,
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+  }
